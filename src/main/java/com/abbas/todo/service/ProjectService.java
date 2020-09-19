@@ -19,6 +19,13 @@ public class ProjectService {
     @Autowired
     private ProjectRepository projectRepository;
 
+    public void createProject(String projectName) {
+        log.debug("Create new project by name : {}", projectName);
+        Project project = new Project();
+        project.setProjectName(projectName);
+        projectRepository.save(project);
+    }
+
     public List<Project> getAllProjects() {
         log.debug("Get all projects");
         return projectRepository.findAll();

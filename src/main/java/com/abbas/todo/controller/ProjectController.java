@@ -18,6 +18,12 @@ public class ProjectController {
     @Autowired
     private ProjectService projectService;
 
+    @PostMapping
+    public void createProject(String projectName) {
+        projectName = "Project1";
+        projectService.createProject(projectName);
+    }
+
     @GetMapping
     public List<Project> getAllProjects() {
         return projectService.getAllProjects();
