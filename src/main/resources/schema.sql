@@ -15,10 +15,6 @@ CREATE TABLE project (
 );
 
 /*========================================================================================*/
-DROP TYPE IF EXISTS todo_status;
-CREATE TYPE todo_status AS ENUM ('PENDING', 'DONE');
-
-/*========================================================================================*/
 CREATE TABLE todo (
     id SERIAL PRIMARY KEY,
     task VARCHAR(50) NOT NULL,
