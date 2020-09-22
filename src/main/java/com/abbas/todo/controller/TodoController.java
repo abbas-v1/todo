@@ -20,8 +20,7 @@ public class TodoController {
     private TodoService todoService;
 
     @PostMapping
-    public void createTodo(String task) {
-        task = "Task3";
+    public void createTodo(@RequestBody String task) {
         todoService.createTodo(task);
     }
 
