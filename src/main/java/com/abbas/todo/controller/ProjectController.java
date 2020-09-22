@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/project")
+@CrossOrigin(origins = "http://localhost:8080")
 public class ProjectController {
 
     @Autowired
