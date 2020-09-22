@@ -1,6 +1,5 @@
 package com.abbas.todo.service;
 
-import com.abbas.todo.TodoStatus;
 import com.abbas.todo.entity.Todo;
 import com.abbas.todo.repository.TodoRepository;
 import java.util.List;
@@ -26,7 +25,7 @@ public class TodoService {
         todo.setTask(task);
         todo.setProjectId(1);
         todo.setUserId(2);
-        todo.setStatus(TodoStatus.PENDING);
+        todo.setCompleted(Boolean.FALSE);
         todoRepository.save(todo);
     }
 

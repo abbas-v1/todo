@@ -24,7 +24,7 @@ CREATE TABLE todo (
     task VARCHAR(50) NOT NULL,
     project_id INTEGER NOT NULL REFERENCES project(id),
     user_id INTEGER NOT NULL REFERENCES user_info(id),
-    status todo_status NOT NULL DEFAULT 'PENDING',
+    completed BOOLEAN NOT NULL DEFAULT FALSE,
     created_at TIMESTAMP NOT NULL DEFAULT now(),
     updated_at TIMESTAMP NOT NULL DEFAULT now()
 );

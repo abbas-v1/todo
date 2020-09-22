@@ -1,6 +1,5 @@
 package com.abbas.todo.entity;
 
-import com.abbas.todo.TodoStatus;
 import java.io.Serializable;
 import javax.persistence.*;
 import lombok.Data;
@@ -24,7 +23,6 @@ public class Todo implements Serializable {
 
     private Integer userId;
 
-	@Enumerated(EnumType.STRING)
-    private TodoStatus status;
+    private Boolean completed;
 
 }
