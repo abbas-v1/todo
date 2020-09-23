@@ -24,6 +24,11 @@ public class TodoController {
         todoService.createTodo(task);
     }
 
+    @DeleteMapping("/{todoId}")
+    public void deleteTodo(@PathVariable("todoId") int todoId) {
+        todoService.deleteTodo(todoId);
+    }
+
     @GetMapping
     public List<Todo> getAllToDos() {
         return todoService.getAllToDos();
