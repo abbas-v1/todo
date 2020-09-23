@@ -20,8 +20,7 @@ public class UserInfoController {
     private UserInfoService userInfoService;
 
     @PostMapping
-    public void createUser(String userName) {
-        userName = "Khan";
+    public void createUser(@RequestBody String userName) {
         userInfoService.createUser(userName);
     }
 

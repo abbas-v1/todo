@@ -20,8 +20,7 @@ public class ProjectController {
     private ProjectService projectService;
 
     @PostMapping
-    public void createProject(String projectName) {
-        projectName = "Project1";
+    public void createProject(@RequestBody String projectName) {
         projectService.createProject(projectName);
     }
 
