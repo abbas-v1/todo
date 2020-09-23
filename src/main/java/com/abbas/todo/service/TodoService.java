@@ -5,6 +5,7 @@ import com.abbas.todo.repository.TodoRepository;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 /**
@@ -43,7 +44,7 @@ public class TodoService {
 
     public List<Todo> getAllToDos() {
         log.debug("Get all ToDo's");
-        return todoRepository.findAll();
+        return todoRepository.findAll(Sort.by(Sort.Direction.ASC, "id"));
     }
 
     public List<Todo> getTodoByProject(Integer projectId) {
