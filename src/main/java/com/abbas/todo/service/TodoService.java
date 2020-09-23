@@ -29,6 +29,13 @@ public class TodoService {
         todoRepository.save(todo);
     }
 
+    public void changeTodoStatus(int todoId, boolean isComplete) {
+        log.debug("Change todo by id : {} to : {}", todoId, isComplete);
+        Todo todo = todoRepository.getOne(todoId);
+        todo.setCompleted(isComplete);
+        todoRepository.save(todo);
+    }
+
     public void deleteTodo(int todoId) {
         log.debug("Delete todo by id : {}", todoId);
         todoRepository.deleteById(todoId);
