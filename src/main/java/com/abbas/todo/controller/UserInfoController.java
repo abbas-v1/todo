@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/user")
-@CrossOrigin(origins = "http://localhost:8080")
+@CrossOrigin(origins = "http://ec2-18-218-206-209.us-east-2.compute.amazonaws.com")
 public class UserInfoController {
 
     @Autowired
