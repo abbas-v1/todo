@@ -1,7 +1,5 @@
-package com.abbas.todo.controller;
+package com.abbas.todo;
 
-import com.abbas.todo.entity.Todo;
-import com.abbas.todo.service.TodoService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

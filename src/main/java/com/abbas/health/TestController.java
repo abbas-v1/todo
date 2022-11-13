@@ -1,4 +1,4 @@
-package com.abbas.todo.controller;
+package com.abbas.health;
 
 import org.springframework.web.bind.annotation.*;
 

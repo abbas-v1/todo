@@ -1,6 +1,6 @@
-package com.abbas.todo.repository;
+package com.abbas.todo;
 
-import com.abbas.todo.entity.Todo;
+import com.abbas.todo.Todo;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

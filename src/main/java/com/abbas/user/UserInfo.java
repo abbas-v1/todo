@@ -1,4 +1,4 @@
-package com.abbas.todo.entity;
+package com.abbas.user;
 
 import java.io.Serializable;
 import javax.persistence.*;

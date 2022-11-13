@@ -1,6 +1,6 @@
-package com.abbas.todo.repository;
+package com.abbas.user;
 
-import com.abbas.todo.entity.UserInfo;
+import com.abbas.user.UserInfo;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

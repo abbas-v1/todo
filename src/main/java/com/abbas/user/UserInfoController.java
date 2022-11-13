@@ -1,7 +1,5 @@
-package com.abbas.todo.controller;
+package com.abbas.user;
 
-import com.abbas.todo.entity.UserInfo;
-import com.abbas.todo.service.UserInfoService;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

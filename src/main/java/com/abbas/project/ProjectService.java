@@ -1,7 +1,7 @@
-package com.abbas.todo.service;
+package com.abbas.project;
 
-import com.abbas.todo.entity.Project;
-import com.abbas.todo.repository.ProjectRepository;
+import com.abbas.project.Project;
+import com.abbas.project.ProjectRepository;
 import java.util.List;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
